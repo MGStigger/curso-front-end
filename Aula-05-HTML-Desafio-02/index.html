@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Aula 05 - HTML - Formulário</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>
+            <center>Formulário de Cadastro de Clientes</center>
+        </h1>
+        <h3>Preencha o formulário com os dados do cliente.</h3>
+    </div>
+
+    <form action="pagina-post.html" method="POST">
+        <fieldset>
+            <div>
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <br>
+            <div>
+                <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                <input type="text" id="sobrenome" name="sobrenome" required>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <div>
+                <label for="email"><strong>E-mail:</strong></label>
+                <input type="email" id="email" name="email">
+            </div>
+            <br>
+            <div>
+                <label for="telefone"><strong>Telefone:</strong></label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <div>
+                <label for="cpf"><strong>CPF:</strong></label>
+                <input type="text" id="cpf" name="cpf" placeholder="012.345.678-90" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                    required><br><br>
+                <small>Formato: 012.345.678-90</small>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <div>
+                <label><strong>Gênero:</strong></label>
+                <input type="radio" id="feminino" name="genero" value="feminino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label for="masculino">Masculino</label>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <div>
+                <label for="endereco"><strong>Endereço:</strong></label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+            <br>
+            <div>
+                <label for="bairro"><strong>Bairro:</strong></label>
+                <input type="text" id="bairro" name="bairro" required>
+            </div>
+            <br>
+            <div>
+                <label for="cidade"><strong>Cidade:</strong></label>
+                <input type="text" id="cidade" name="cidade" required>
+            </div>
+            <br>
+            <div>
+                <label><strong>Estado:</strong></label>
+                <select id="estado">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Acre</option>
+                    <option>Alagoas</option>
+                    <option>Amapá</option>
+                    <option>Amazonas</option>
+                    <option>Bahia</option>
+                    <option>Ceará</option>
+                    <option>Distrito Federal</option>
+                    <option>Espírito Santo</option>
+                    <option>Goiás</option>
+                    <option>Maranhão</option>
+                    <option>Mato Grosso</option>
+                    <option>Mato Grosso do Sul</option>
+                    <option>Minas Gerais</option>
+                    <option>Pará</option>
+                    <option>Paraíba</option>
+                    <option>Paraná</option>
+                    <option>Pernambuco</option>
+                    <option>Piauí</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Rio Grande do Norte</option>
+                    <option>Rio Grande do Sul</option>
+                    <option>Rondônia</option>
+                    <option>Roraima</option>
+                    <option>Santa Catarina</option>
+                    <option>São Paulo</option>
+                    <option>Sergipe</option>
+                    <option>Tocantins</option>
+                </select>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <div id="check">
+                <label><strong>O cliente prefere ser contatado por:</strong></label>
+                <input type="checkbox" id="opcao1" name="contatar" value="E-mail">
+                <label for="opcao1">E-mail</label>
+                <input type="checkbox" id="opcao2" name="contatar" value="Telefone">
+                <label for="opcao2">Telefone</label>
+                <input type="checkbox" id="opcao3" name="contatar" value="SMS">
+                <label for="opcao3">SMS</label>
+            </div>
+        </fieldset>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+
+</html>
